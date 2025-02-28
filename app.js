@@ -162,13 +162,15 @@ let fizz = [];
 let buzz = [];
 let fizzbuzz = [];
 for (let i = 0; i < nums.length; i++){
-    if (nums[i] % 3 = 0){
+    if (nums[i] % 3 === 0){
         fizz.push(nums[i]);
     };
-    if (nums[i] % 5 = 0){
+    if (nums[i] % 5 === 0){
         buzz.push(nums[i]);
     };
-    //need to add the fizzbuzz conditional still
+    if (nums[i] % 3 === 0 && nums[i] % 5 === 0){
+      fizzbuzz.push(nums[i]);
+    };
 };
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
