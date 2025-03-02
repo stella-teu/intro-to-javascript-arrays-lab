@@ -7,7 +7,7 @@ Exercise 1 has been completed for you:
 */
 
 const foods = [];  
-// console.log('Exercise 1 result:', foods);
+console.log('Exercise 1 result:', foods);
 
 /*
 Exercise 2: Add strings to the array
@@ -19,7 +19,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 foods.push("pizza", "cheeseburger");
-// console.log('Exercise 2 result:', foods);
+console.log('Exercise 2 result:', foods);
 
 /*
 Exercise 3: Insert at the beginning
@@ -29,7 +29,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 foods.unshift("taco");
-// console.log('Exercise 3 result:', foods);
+console.log('Exercise 3 result:', foods);
 
 /*
 Exercise 4: Access an array element
@@ -42,7 +42,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 const favFood = foods[1];
-// console.log('Exercise 4 result:', favFood);
+console.log('Exercise 4 result:', favFood);
 
 /*
 Exercise 5: Insert an element between two others
@@ -52,7 +52,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 foods.splice(2, 0, "tofu");
-// console.log('Exercise 5 result:', foods);
+console.log('Exercise 5 result:', foods);
 
 /*
 Exercise 6: Replace elements
@@ -63,7 +63,7 @@ Complete Exercise 6 in the space below:
 */
 foods[1] = "sushi";
 foods.splice(2,0, "cupcake");
-// console.log('Exercise 6 result:', foods);
+console.log('Exercise 6 result:', foods);
 
 /*
 Exercise 7: Using the `slice()` method
@@ -76,7 +76,7 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 const yummy = foods.slice(1,3);
-// console.log('Exercise 7 result:', yummy);
+console.log('Exercise 7 result:', yummy);
 
 /*
 Exercise 8: Finding an index
@@ -89,7 +89,7 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 const soyIdx = foods.indexOf("tofu");
-// console.log('Exercise 8 result:', soyIdx);
+console.log('Exercise 8 result:', soyIdx);
 
 /*
 Exercise 9: Joining elements
@@ -105,7 +105,7 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 const allFoods = foods.join(" --> ");
-// console.log('Exercise 9 result:', allFoods);
+console.log('Exercise 9 result:', allFoods);
 
 /*
 Exercise 10: Check for an element
@@ -118,7 +118,7 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 const hasSoup = foods.includes("soup");
-// console.log('Exercise 10 result:', hasSoup);
+console.log('Exercise 10 result:', hasSoup);
 
 /*
 Exercise 11: Odd numbers from an array
@@ -138,7 +138,7 @@ for (let i = 0; i < nums.length; i++){
         odds.push(nums[i]);
     };
 };
-// console.log('Exercise 11 result:', odds);
+console.log('Exercise 11 result:', odds);
 
 /*
 Exercise 12: FizzBuzz with arrays
@@ -172,10 +172,10 @@ for (let i = 0; i < nums.length; i++){
       fizzbuzz.push(nums[i]);
     };
 };
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
-// console.log('  buzz:', buzz);
-// console.log('  fizzbuzz:', fizzbuzz);
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 /*
 Exercise 13: Retrieve the Last Array
@@ -222,8 +222,11 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
-numArrays.forEach(() => {
-   
+let total = 0;
+numArrays.forEach((array) => {
+   for (let i = 0; i < array.length; i++){
+      total += array[i];
+   }
 }
 );
 console.log('Exercise 15 result:\n', total);
